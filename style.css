@@ -1,86 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+  font-family: "Inter", sans-serif;
 }
+
 body {
   background-color: white;
   color: white;
   max-width: 100%;
-  min-height: 105vh;
-  overflow-y: hidden;
-   }
-
-.container {
-  margin-top: 20px;
+  min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222222;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  height: 800px;
-  width: 370px;
-  
+}
 
+.container {
+  background-color: #222222;
+  padding: 25px 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 370px;
 }
 
 img {
   margin-top: 10px;
   border-radius: 50%;
   width: 90px;
-  padding: auto;
-  margin-bottom: 10px;
-  border: 1px solid hsl(0, 0%, 100%) ;
-}
-
-.text {
-  text-align: center;
+  margin-bottom: 15px;
+  border: 1px solid white;
 }
 
 #name {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: white;
 }
 
 #green {
   color: #004aad;
-  text-align: center;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 #dev {
-  margin-bottom: 20px;
-  font-size: 15px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #e0e0e0;
 }
 
 .link a {
   display: block;
-  flex-direction: column;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #004aad;
+  padding: 12px;
+  border: none;
   background-color: #004aad;
-  margin: 20px;
+  margin: 12px auto;
   text-decoration: none;
   color: #fff;
   border-radius: 10px;
-  width: 290px;
-  transition: background 0.90s;
-  cursor: pointer;
+  width: 100%;
+  max-width: 290px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-a:hover{
-    background-color: white;
-    color:#004aad ;
-    font-weight: 500;
+.link a:hover,
+.link a:active {
+  background-color: white;
+  color: #004aad;
+  border: 1px solid #004aad;
+  font-weight: 600;
+}
+
+@media (max-height: 700px) {
+  body {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
 }
