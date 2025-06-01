@@ -29,5 +29,20 @@
       <a target="_blank" href="https://www.linkedin.com/in/eduarda-alves-01a500362/">Eduarda - Redator</a>
     </div>
   </div>
+  <script>
+  const links = document.querySelectorAll('.link a');
+
+  links.forEach(link => {
+    link.addEventListener('touchstart', () => {
+      link.classList.add('hover-mobile');
+    });
+
+    link.addEventListener('touchend', () => {
+      setTimeout(() => {
+        link.classList.remove('hover-mobile');
+      }, 200);
+    });
+  });
+</script>
 </body>
 </html>
