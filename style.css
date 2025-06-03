@@ -77,7 +77,6 @@ img {
 .link a:active {
   background-color: white;
   color: #004aad;
-  border: 1px solid #004aad;
   font-weight: 600;
 }
 
